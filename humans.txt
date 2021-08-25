@@ -1,6 +1,4 @@
 Now I am in master branch
-
-
 # humanstxt.org/
 # The humans responsible & technology colophon
 
