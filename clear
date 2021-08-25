@@ -1,0 +1,65 @@
+[1mdiff --git a/README.md b/README.md[m
+[1mnew file mode 100644[m
+[1mindex 0000000..50b910b[m
+[1m--- /dev/null[m
+[1m+++ b/README.md[m
+[36m@@ -0,0 +1,14 @@[m
+[32m+[m[32m# Starter Web Repo[m
+[32m+[m
+[32m+[m[32mThis repository is for showing how Git and GitHub work[m
+[32m+[m
+[32m+[m[32m## Purpose[m
+[32m+[m
+[32m+[m[32mSample website with plenty of files for demos[m
+[32m+[m
+[32m+[m[32m### Introduction[m
+[32m+[m
+[32m+[m[32m#### How to contribute[m
+[32m+[m
+[32m+[m[32m##### Now I compare between staging and working directory[m
+[32m+[m
+[1mdiff --git a/hipster.txt b/hipster.txt[m
+[1mnew file mode 100644[m
+[1mindex 0000000..eacf54e[m
+[1m--- /dev/null[m
+[1m+++ b/hipster.txt[m
+[36m@@ -0,0 +1,38 @@[m
+[32m+[m[32mpackage Keywords;[m
+[32m+[m[32mimport java.io.File;[m
+[32m+[m[32mimport java.io.FileInputStream;[m
+[32m+[m[32mimport java.io.IOException;[m
+[32m+[m[32mimport java.util.Properties;[m
+[32m+[m[32mimport org.openqa.selenium.By;[m
+[32m+[m[32mimport org.openqa.selenium.WebDriver;[m
+[32m+[m[32mimport org.openqa.selenium.support.ui.ExpectedConditions;[m
+[32m+[m[32mimport org.openqa.selenium.support.ui.WebDriverWait;[m
+[32m+[m
+[32m+[m[32mpublic class Keywords {[m
+[32m+[m[32mpublic void click(WebDriver driver, String ObjectName, String typeLocator)[m[41m [m
+[32m+[m[32mthrows IOException{[m
+[32m+[m[32mdriver.findElement(this.getObject(ObjectName, typeLocator)).click();[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32mBy getObject(String ObjectName, String typeLocator) throws[m
+[32m+[m[32mIOException{[m
+[32m+[m[32m//Object Repository is opened[m[41m [m
+[32m+[m[32mFile file = new File(path+"\\Externals\\Object Repository.properties");[m
+[32m+[m[32mFileInputStream fileInput = new FileInputStream(file);[m
+[32m+[m[32m//Properties file is read[m[41m [m
+[32m+[m[32mProperties prop = new Properties();[m
+[32m+[m[32mif(typeLocator.equalsIgnoreCase("XPATH")){[m
+[32m+[m[32mreturn By.xpath(prop.getProperty(ObjectName));[m[41m [m
+[32m+[m[32m// ObjectName is read and its value is returned[m
+[32m+[m[32m}[m
+[32m+[m[32melse if(typeLocator.equalsIgnoreCase("ID")){[m
+[32m+[m[32mreturn By.id(prop.getProperty(ObjectName));[m
+[32m+[m[32m// ObjectName is read and its value is returned[m
+[32m+[m[32m}[m
+[32m+[m[32melse if(typeLocator.equalsIgnoreCase("NAME")){[m
+[32m+[m[32mreturn By.name(prop.getProperty(ObjectName));[m
+[32m+[m[32m// ObjectName is read and its value is returned[m
+[32m+[m[32m}[m
+[32m+[m[32mreturn null;[m
+[32m+[m[32m}[m
+[32m+[m[32m}[m
+\ No newline at end of file[m
