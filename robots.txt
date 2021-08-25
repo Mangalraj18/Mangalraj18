@@ -1,3 +1,6 @@
 # robotstxt.org/
 
 User-agent: *
+
+
+Now I am reading rebase topic I hope i understand all topics whatever he learned
