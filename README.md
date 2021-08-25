@@ -12,3 +12,5 @@ Sample website with plenty of files for demos
 
 ##### Now I compare between staging and working directory
 
+##### Now I compare between repository and working directory
+
